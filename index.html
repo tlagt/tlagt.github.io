@@ -111,7 +111,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -129,6 +129,89 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://tlagt.github.io/2025/03/11/C++_2nd%E7%AB%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="tlagt">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2025/03/11/C++_2nd%E7%AB%A0/" class="post-title-link" itemprop="url">C++_2nd章</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2025-03-11 08:46:14 / Modified: 08:58:57" itemprop="dateCreated datePublished" datetime="2025-03-11T08:46:14+08:00">2025-03-11</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>1.注视多行&#x2F;**&#x2F;</p>
+<p>2.\n &amp; endl 差异</p>
+<p>#include <iostream><br>#include &lt;unistd.h&gt;</p>
+<p>using namespace std;</p>
+<p>int main() {<br>    cout &lt;&lt; “即将开始等待…” &lt;&lt; endl;<br>    cout &lt;&lt; “等待中…” &lt;&lt; endl;<br>    sleep(5);<br>    cout &lt;&lt; endl;<br>    cout &lt;&lt; “等待结束。” &lt;&lt; endl;<br>    return 0;<br>}<br>若将等待中之后的endl替换为\n，输出结果不同，等待中将会在5秒后才出现</p>
+<p>这是由于endl确保程序继续运行前刷新输出</p>
+<p>3.定义没有返回值的函数的时候，不能将它赋给其他变量</p>
+<pre><code>eg.
+    void simon(int n)
+
+    simon(3)    //legal
+
+    simple = simon(3)   //illegal
+</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
